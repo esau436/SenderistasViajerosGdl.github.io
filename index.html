@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senderistas Viajeros</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <style>
+        /* Estilo suave para la transición del carrusel */
+        .carousel-item {
+            display: none;
+        }
+        .carousel-item.active {
+            display: block;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <nav class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center gap-2">
+                    <i class="ph ph-compass text-emerald-600 text-3xl"></i>
+                    <span class="text-xl font-bold tracking-tight text-slate-900">SENDERISTAS <span class="text-emerald-600">VIAJEROS</span></span>
+                </div>
+                <div class="hidden md:flex space-x-8 font-medium text-slate-600">
+                    <a href="#" class="text-emerald-600 border-b-2 border-emerald-600 px-1 id">Inicio</a>
+                  <!--  <a href="#" class="hover:text-emerald-600 transition-colors px-1">Catálogo</a> -->
+                  <!--  <a href="#" class="hover:text-emerald-600 transition-colors px-1">Sobre Nosotros</a>-->
+                    <a href="contacto.html" class="hover:text-emerald-600 transition-colors px-1">Contacto</a>
+                </div>
+                <a href="https://wa.me/523333041446?text=Hola,%20estoy%20interesado%20en%20reservar%20un%20viaje%20con%20Senderistas%20Viajeros" target="_blank" class="inline-block text-center bg-emerald-600 hover:bg-emerald-700 text-white px-5 py-2 rounded-full font-medium transition-all shadow-sm shadow-emerald-200">
+                    Reservar ahora
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="relative w-full h-[70vh] bg-slate-900 overflow-hidden">
+        <div class="carousel-item active relative w-full h-full fade-in">
+            <img src="./Images/ViaFerrata.png" class="w-full h-full object-cover opacity-60" alt="Montañas de México">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
+            <div class="absolute inset-0 flex flex-col justify-center items-center text-center px-4">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-white tracking-tight drop-shadow-md">Explora Rutas Volcánicas</h1>
+                <p class="text-slate-200 mt-4 text-lg md:text-xl max-w-2xl drop-shadow">Conquista las cumbres más altas y descubre paisajes que se quedan grabados en la memoria para siempre.</p>
+            </div>
+        </div>
+
+        <div class="carousel-item relative w-full h-full">
+            <img src="./Images/NevadoToluca.png" class="w-full h-full object-cover opacity-60" alt="Senderismo en bosques">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
+            <div class="absolute inset-0 flex flex-col justify-center items-center text-center px-4">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-white tracking-tight drop-shadow-md">Conecta con la Naturaleza</h1>
+                <p class="text-slate-200 mt-4 text-lg md:text-xl max-w-2xl drop-shadow">Rutas diseñadas para desconectar de la rutina y respirar el aire puro de los bosques y cañones.</p>
+            </div>
+        </div>
+
+        <button onclick="moveSlide(-1)" class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/40 text-white p-3 rounded-full backdrop-blur-sm transition-all">
+            <i class="ph ph-caret-left text-2xl font-bold"></i>
+        </button>
+        <button onclick="moveSlide(1)" class="absolute right-4 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/40 text-white p-3 rounded-full backdrop-blur-sm transition-all">
+            <i class="ph ph-caret-right text-2xl font-bold"></i>
+        </button>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 text-center">
+        <span class="text-emerald-600 font-bold tracking-widest text-sm uppercase">Próximas Aventuras</span>
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mt-2">Nuestro Catálogo de Viajes</h2>
+        <div class="w-16 h-1 bg-emerald-500 mx-auto mt-4 rounded-full"></div>
+    </div>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-24">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-slate-100 flex flex-col">
+                <div class="relative h-64 overflow-hidden">
+                    <img src="./Images/ViaFerrata01.png" alt="Ruta Volcánica" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
+                    <span class="absolute top-4 left-4 bg-emerald-600 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-full shadow-md">Aventura</span>
+                </div>
+                <div class="p-6 flex-grid flex flex-col flex-grow">
+                    <div class="flex justify-between items-center text-slate-500 text-sm mb-2">
+                        <span class="flex items-center gap-1"><i class="ph ph-calendar-blank"></i> 30-31 Mayo</span>
+                        <span class="flex items-center gap-1"><i class="ph ph-chart-bar"></i> Moderado</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2 hover:text-emerald-600 transition-colors">Mineral Del chico</h3>
+                    <p class="text-slate-600 text-sm line-clamp-3 mb-6">Acompáñanos en una aventura inolvidable por el corazón de Hidalgo, donde la naturaleza y la historia se abrazan. Caminaremos entre la mística niebla y los senderos de Mineral del Chico, exploraremos los rincones mágicos y llenos de leyendas de Huasca de Ocampo, y nos desconectaremos del mundo en los paisajes boscosos de El Cedral y La Estanzuela. Un viaje diseñado para conectar, superar retos y disfrutar del verdadero compañerismo en cada cumbre.</p>
+                    <div class="mt-auto pt-4 border-t border-slate-100 flex items-center justify-between">
+                        <div>
+                            <span class="text-xs text-slate-400 block">Precio por persona</span>
+                            <span class="text-xl font-bold text-slate-900">$1,650 MXN</span>
+                        </div>
+                        <a href="#" class="bg-slate-900 hover:bg-emerald-600 text-white text-sm font-semibold px-4 py-2.5 rounded-xl transition-colors flex items-center gap-2 group">
+                            Ver detalle 
+                            <i class="ph ph-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-slate-100 flex flex-col">
+                <div class="relative h-64 overflow-hidden">
+                    <img src="./Images/BocaIguanas.jpg" alt="Bosque y Presas" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
+                    <span class="absolute top-4 left-4 bg-blue-600 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-full shadow-md">Playa</span>
+                </div>
+                <div class="p-6 flex-grid flex flex-col flex-grow">
+                    <div class="flex justify-between items-center text-slate-500 text-sm mb-2">
+                        <span class="flex items-center gap-1"><i class="ph ph-calendar-blank"></i> 26-27 Junio</span>
+                        <span class="flex items-center gap-1"><i class="ph ph-chart-bar"></i> relajación</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2 hover:text-emerald-600 transition-colors">Punta Perula / Boca de Iguanas</h3>
+                    <p class="text-slate-600 text-sm line-clamp-3 mb-6">El secreto mejor guardado de la Costa Alegre te espera. Deja atrás la rutina y conéctate con la energía del océano en una travesía que combina la paz de playas vírgenes con la emoción de la exploración. Descubriremos la belleza tranquila de Punta Pérula, el punto de partida perfecto para navegar hacia islas de aguas cristalinas y arena blanca, ideales para el snorkel y la fotografía de naturaleza.</p>
+                    <div class="mt-auto pt-4 border-t border-slate-100 flex items-center justify-between">
+                        <div>
+                            <span class="text-xs text-slate-400 block">Precio por persona</span>
+                            <span class="text-xl font-bold text-slate-900">$Por Confirmar</span>
+                        </div>
+                        <a href="#" class="bg-slate-900 hover:bg-emerald-600 text-white text-sm font-semibold px-4 py-2.5 rounded-xl transition-colors flex items-center gap-2 group">
+                            Ver detalle 
+                            <i class="ph ph-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-slate-100 flex flex-col">
+                <div class="relative h-64 overflow-hidden">
+                    <img src="./Images/CascadasMismaloya.png" alt="Cascadas y Cañones" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
+                    <span class="absolute top-4 left-4 bg-amber-600 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-full shadow-md">Aventura</span>
+                </div>
+                <div class="p-6 flex-grid flex flex-col flex-grow">
+                    <div class="flex justify-between items-center text-slate-500 text-sm mb-2">
+                        <span class="flex items-center gap-1"><i class="ph ph-calendar-blank"></i> 25-26 Julio</span>
+                        <span class="flex items-center gap-1"><i class="ph ph-chart-bar"></i> Fácil</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2 hover:text-emerald-600 transition-colors">Cascadas de Mismaloya</h3>
+                    <p class="text-slate-600 text-sm line-clamp-3 mb-6">Una aventura de día completo te espera. Explora senderos únicos y descubre hasta tres caídas de agua cristalina escondidas en la selva baja. Ideal para los amantes del senderismo que buscan una experiencia auténtica y vistas espectaculares. ¡Tu momento es ahora!</p>
+                    <div class="mt-auto pt-4 border-t border-slate-100 flex items-center justify-between">
+                        <div>
+                            <span class="text-xs text-slate-400 block">Precio por persona</span>
+                            <span class="text-xl font-bold text-slate-900">$Por Confirmar</span>
+                        </div>
+                        <a href="#" class="bg-slate-900 hover:bg-emerald-600 text-white text-sm font-semibold px-4 py-2.5 rounded-xl transition-colors flex items-center gap-2 group">
+                            Ver detalle 
+                            <i class="ph ph-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+             <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-slate-100 flex flex-col">
+                <div class="relative h-64 overflow-hidden">
+                    <img src="./Images/Chiquilistlan.jpg" alt="Cascadas y Cañones" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
+                    <span class="absolute top-4 left-4 bg-amber-600 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-full shadow-md">Aventura</span>
+                </div>
+                <div class="p-6 flex-grid flex flex-col flex-grow">
+                    <div class="flex justify-between items-center text-slate-500 text-sm mb-2">
+                        <span class="flex items-center gap-1"><i class="ph ph-calendar-blank"></i> 22-23 Agosto</span>
+                        <span class="flex items-center gap-1"><i class="ph ph-chart-bar"></i> Fácil</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2 hover:text-emerald-600 transition-colors">Chiquilistlán</h3>
+                    <p class="text-slate-600 text-sm line-clamp-3 mb-6">Prepárate para una travesía llena de adrenalina, pozas turquesa y paisajes montañosos inolvidables. Caminaremos entre imponentes formaciones rocosas y disfrutaremos de la frescura de sus cañones en una experiencia única de conexión</p>
+                    <div class="mt-auto pt-4 border-t border-slate-100 flex items-center justify-between">
+                        <div>
+                            <span class="text-xs text-slate-400 block">Precio por persona</span>
+                            <span class="text-xl font-bold text-slate-900">$Por Confirmar</span>
+                        </div>
+                        <a href="#" class="bg-slate-900 hover:bg-emerald-600 text-white text-sm font-semibold px-4 py-2.5 rounded-xl transition-colors flex items-center gap-2 group">
+                            Ver detalle 
+                            <i class="ph ph-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-slate-100 flex flex-col">
+                <div class="relative h-64 overflow-hidden">
+                    <img src="./Images/SierraGorda.jpg" alt="Cascadas y Cañones" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
+                    <span class="absolute top-4 left-4 bg-amber-600 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-full shadow-md">Aventura</span>
+                </div>
+                <div class="p-6 flex-grid flex flex-col flex-grow">
+                    <div class="flex justify-between items-center text-slate-500 text-sm mb-2">
+                        <span class="flex items-center gap-1"><i class="ph ph-calendar-blank"></i> 12-13 Septiembre</span>
+                        <span class="flex items-center gap-1"><i class="ph ph-chart-bar"></i> Moderado</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2 hover:text-emerald-600 transition-colors">Sierra Gorda de Queretaro</h3>
+                    <p class="text-slate-600 text-sm line-clamp-3 mb-6">La Sierra Gorda tiene tantos tesoros que tomará varias visitas descubrirlos todos. Desde las vistas majestuosas que te ofrece el Mirador de Cuatro Palos o el Sótano del Barro, su deslumbrante biodiversidad, hasta la gastronomía típica de los municipios serranos, a cada paso hay algo distinto por conocer.</p>
+                    <div class="mt-auto pt-4 border-t border-slate-100 flex items-center justify-between">
+                        <div>
+                            <span class="text-xs text-slate-400 block">Precio por persona</span>
+                            <span class="text-xl font-bold text-slate-900">$Por Confirmar</span>
+                        </div>
+                        <a href="#" class="bg-slate-900 hover:bg-emerald-600 text-white text-sm font-semibold px-4 py-2.5 rounded-xl transition-colors flex items-center gap-2 group">
+                            Ver detalle 
+                            <i class="ph ph-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-slate-100 flex flex-col">
+                <div class="relative h-64 overflow-hidden">
+                    <img src="./Images/LosAzufres.jpg" alt="Cascadas y Cañones" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
+                    <span class="absolute top-4 left-4 bg-amber-600 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-full shadow-md">Aventura</span>
+                </div>
+                <div class="p-6 flex-grid flex flex-col flex-grow">
+                    <div class="flex justify-between items-center text-slate-500 text-sm mb-2">
+                        <span class="flex items-center gap-1"><i class="ph ph-calendar-blank"></i> 17-18 Octubre</span>
+                        <span class="flex items-center gap-1"><i class="ph ph-chart-bar"></i> Moderado</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2 hover:text-emerald-600 transition-colors">Los Azufres, Michoacán</h3>
+                    <p class="text-slate-600 text-sm line-clamp-3 mb-6">Los Azufres, Michoacán, es un impresionante complejo de aguas termales y géiseres rodeado de frondosos bosques de pinos y montañas. Ubicado en el municipio de Hidalgo, a aproximadamente 1 hora y 30 minutos de Morelia, el área cuenta con varios parques, </p>
+                    <div class="mt-auto pt-4 border-t border-slate-100 flex items-center justify-between">
+                        <div>
+                            <span class="text-xs text-slate-400 block">Precio por persona</span>
+                            <span class="text-xl font-bold text-slate-900">$Por Confirmar</span>
+                        </div>
+                        <a href="#" class="bg-slate-900 hover:bg-emerald-600 text-white text-sm font-semibold px-4 py-2.5 rounded-xl transition-colors flex items-center gap-2 group">
+                            Ver detalle 
+                            <i class="ph ph-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-slate-100 flex flex-col">
+                <div class="relative h-64 overflow-hidden">
+                    <img src="./Images/Honey.png" alt="Cascadas y Cañones" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
+                    <span class="absolute top-4 left-4 bg-amber-600 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-full shadow-md">Alta Montaña</span>
+                </div>
+                <div class="p-6 flex-grid flex flex-col flex-grow">
+                    <div class="flex justify-between items-center text-slate-500 text-sm mb-2">
+                        <span class="flex items-center gap-1"><i class="ph ph-calendar-blank"></i> 13-16 Noviembre</span>
+                        <span class="flex items-center gap-1"><i class="ph ph-chart-bar"></i> Moderado</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2 hover:text-emerald-600 transition-colors">La Malinche/Cascadas de Honey</h3>
+                    <p class="text-slate-600 text-sm line-clamp-3 mb-6">La Malinche y Cascadas de Honey: El balance perfecto entre la cumbre y el bosque. Desafía tus límites conquistando una de las cumbres más icónicas de México y recompensa el esfuerzo explorando un santuario de diez cascadas cristalinas rodeadas de puentes colgantes y misticismo. Una travesía de alta montaña y senderismo mágico diseñada para conectar con la naturaleza en su estado más puro.</p>
+                    <div class="mt-auto pt-4 border-t border-slate-100 flex items-center justify-between">
+                        <div>
+                            <span class="text-xs text-slate-400 block">Precio por persona</span>
+                            <span class="text-xl font-bold text-slate-900">$Por Confirmar</span>
+                        </div>
+                        <a href="#" class="bg-slate-900 hover:bg-emerald-600 text-white text-sm font-semibold px-4 py-2.5 rounded-xl transition-colors flex items-center gap-2 group">
+                            Ver detalle 
+                            <i class="ph ph-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-2 text-white">
+                <i class="ph ph-compass text-emerald-500 text-2xl"></i>
+                <span class="font-bold tracking-tight">SENDERISTAS VIAJEROS</span>
+            </div>
+            <p class="text-sm">&copy; 2026 Senderistas Viajeros. Explora con seguridad, vive con pasión.</p>
+            <div class="flex space-x-6 text-xl">
+                <a href="https://www.instagram.com/senderistasviajeros/" class="hover:text-emerald-400 transition-colors"><i class="ph ph-instagram-logo"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61582459804941" class="hover:text-emerald-400 transition-colors"><i class="ph ph-facebook-logo"></i></a>
+                <a href="https://www.tiktok.com/@senderistasviajerosgdl" class="hover:text-emerald-400 transition-colors"><i class="ph ph-tiktok-logo"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel-item');
+
+        function showSlide(index) {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (index + slides.length) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+
+        function moveSlide(step) {
+            showSlide(currentSlide + step);
+        }
+
+        // Rotación automática opcional cada 5 segundos
+        setInterval(() => {
+            moveSlide(1);
+        }, 5000);
+    </script>
+</body>
+</html>

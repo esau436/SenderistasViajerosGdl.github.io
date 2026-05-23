@@ -96,12 +96,12 @@
                             <div class="absolute -left-[33px] top-1.5 bg-white border-2 border-emerald-500 w-4 h-4 rounded-full group-hover:bg-emerald-500 transition-colors"></div>
                             
                             <div class="bg-white rounded-xl border border-slate-100 shadow-sm overflow-hidden">
-                                <button onclick="toggleAccordion('dia1')" class="w-full flex justify-between items-center p-4 bg-slate-50/50 hover:bg-slate-50 transition-colors text-left">
+                                <button onclick="toggleAccordion('dia0')" class="w-full flex justify-between items-center p-4 bg-slate-50/50 hover:bg-slate-50 transition-colors text-left">
                                     <span class="font-bold text-slate-800 text-base md:text-lg">Día 0, Viernes 29 de Mayo del 2026: </span>
-                                    <i id="icon-dia1" class="ph ph-caret-up text-slate-500 transition-transform duration-200"></i>
+                                    <i id="icon-dia0" class="ph ph-caret-up text-slate-500 transition-transform duration-200"></i>
                                 </button>
                                 
-                                <div id="content-dia1" class="p-6 space-y-4 border-t border-slate-100">
+                                <div id="content-dia0" class="p-6 space-y-4 border-t border-slate-100">
                                     <p class="text-slate-600 text-sm leading-relaxed">
                                         <p class="text-slate-600 text-sm leading-relaxed">
                                          <strong class="text-slate-900 block mb-1">
@@ -145,66 +145,67 @@
 
                         <div class="relative group">
                             <div class="absolute -left-[33px] top-1.5 bg-white border-2 border-emerald-500 w-4 h-4 rounded-full group-hover:bg-emerald-500 transition-colors"></div>
-                            <div class="bg-white rounded-xl border border-slate-100 shadow-sm overflow-hidden">
-                                <button onclick="toggleAccordion('dia2')" class="w-full flex justify-between items-center p-4 bg-slate-50/50 hover:bg-slate-50 transition-colors text-left">
-                                    <span class="font-bold text-slate-800 text-base md:text-lg">Día 1: Sabado 30 de mayo 2026 </span>
-                                    <i id="icon-dia2" class="ph ph-caret-down text-slate-500 transition-transform duration-200"></i>
-                                </button>
-                                <div id="content-dia1" class="p-6 space-y-4 border-t border-slate-100">
-                                    <p class="text-slate-600 text-sm leading-relaxed">
-                                        <p class="text-slate-600 text-sm leading-relaxed">
-                                         <strong class="text-slate-900 block mb-1">
-                                            08:30 AM - 11:45 AM | Llegada a  Huasca de Ocampo
-                                            <a href="https://maps.app.goo.gl/xgii6187prqiPi6TA" target="_blank" class="text-emerald-600 hover:text-emerald-700 underline inline-flex items-center gap-1 font-bold group">
-                                                Huasca de Ocampo
-                                                <i class="ph ph-map-pin text-base group-hover:scale-110 transition-transform"></i>
-                                            </a>
-                                          </strong>
-                                             Nuestra aventura comienza en Huasca de Ocampo, Tras un desayuno tradicional, nos dirigiremos a los Prismas Basálticos, una de las trece maravillas naturales del país; Finalmente, exploraremos la Ex Hacienda de San Miguel Regla, un tesoro del siglo XVIII
-                                        </p>
+    
+                        <div class="bg-white rounded-xl border border-slate-100 shadow-sm overflow-hidden">
+                            <button onclick="toggleAccordion('dia1')" class="w-full flex justify-between items-center p-4 bg-slate-50/50 hover:bg-slate-50 transition-colors text-left">
+                                <span class="font-bold text-slate-800 text-base md:text-lg">Día 1: Sábado 30 de mayo 2026</span>
+                                <i id="icon-dia1" class="ph ph-caret-down text-slate-500 transition-transform duration-200"></i>
+                            </button>
+                            
+                            <div id="content-dia1" class="p-6 space-y-6 border-t border-slate-100 hidden">
+                                <div class="text-slate-600 text-sm leading-relaxed">
+                                    <strong class="text-slate-900 block mb-1">
+                                        08:30 AM - 11:45 AM | Llegada a Huasca de Ocampo
+                                        <a href="https://maps.app.goo.gl/xgii6187prqiPi6TA" target="_blank" class="text-emerald-600 hover:text-emerald-700 underline inline-flex items-center gap-1 font-bold group">
+                                            Huasca de Ocampo
+                                            <i class="ph ph-map-pin text-base group-hover:scale-110 transition-transform"></i>
+                                        </a>
+                                    </strong>
+                                    Nuestra aventura comienza en Huasca de Ocampo. Tras un desayuno tradicional, nos dirigiremos a los Prismas Basálticos, una de las trece maravillas naturales del país; Finalmente, exploraremos la Ex Hacienda de San Miguel Regla, un tesoro del siglo XVIII.
+                                </div>
+                                <div class="text-slate-600 text-sm leading-relaxed">
+                                    <strong class="text-slate-900 block mb-1">
+                                        12:00 PM | Presa del Cedral
+                                        <a href="https://maps.app.goo.gl/gmrQcLbNy4XuwYuB8" target="_blank" class="text-emerald-600 hover:text-emerald-700 underline inline-flex items-center gap-1 font-bold group">
+                                            Presa del Cedral
+                                            <i class="ph ph-map-pin text-base group-hover:scale-110 transition-transform"></i>
+                                        </a>
+                                    </strong>
+                                    Llegaremos a La Estanzuela, dentro del majestuoso Parque Nacional El Chico. Este lugar, decretado en 1898 como el primer parque nacional de México, rodeado de densos bosques de oyamel, será nuestro hogar por esta noche. Instalaremos nuestro campamento a las orillas de la Presa El Cedral, ahí nos espera un ascenso de aproximadamente 45 minutos. Desde la cima, a más de 2,800 metros de altitud, dominaremos con la mirada todo el valle de Mineral del Chico.
+                                </div>
 
-                                        <p class="text-slate-600 text-sm leading-relaxed">
-                                         <strong class="text-slate-900 block mb-1">
-                                            12:00 PM | Presa del Cedral
-                                            <a href="https://maps.app.goo.gl/gmrQcLbNy4XuwYuB8" target="_blank" class="text-emerald-600 hover:text-emerald-700 underline inline-flex items-center gap-1 font-bold group">
-                                                Presa del Cedral
-                                                <i class="ph ph-map-pin text-base group-hover:scale-110 transition-transform"></i>
-                                            </a>
-                                          </strong>
-                                            llegaremos a La Estanzuela, dentro del majestuoso Parque Nacional El Chico. Este lugar, decretado en 1898 como el primer parque nacional de México, densos bosques de oyamel, será nuestro hogar por esta noche. Instalaremos nuestro campamento a las orillas de la Presa El Cedral, ahi nos espera un ascenso de aproximadamente 45 minutos Desde la cima, a más de 2,800 metros de altitud, dominaremos con la mirada todo el valle de Mineral del Chico
-                                        </p>
-                                        <p class="text-slate-600 text-sm leading-relaxed">
-                                         <strong class="text-slate-900 block mb-1">
-                                            4:00 PM | Salida para Via ferrata Nocturna.
-                                            <a href="https://maps.app.goo.gl/NhgUw8SapcVPY2uNA" target="_blank" class="text-emerald-600 hover:text-emerald-700 underline inline-flex items-center gap-1 font-bold group">
-                                                 HGO- Adventures
-                                                <i class="ph ph-map-pin text-base group-hover:scale-110 transition-transform"></i>
-                                            </a>
-                                          </strong>
-                                            ¡Lleva tu adrenalina al siguiente nivel! ✨ Atrévete a vivir la Vía Ferrata Nocturna, un recorrido por las imponentes paredes de roca de la Sierra, pero bajo el manto de las estrellas. Además, cruzarás puentes Iluminados, una experiencia mágica donde las luces guían tu camino sobre el abismo. ¡Una aventura inolvidable que solo se vive de noche!
-                                        </p>
-                                    </p>
-                                    <p class="text-slate-500 text-xs italic bg-slate-50 p-2.5 rounded-lg border-l-4 border-emerald-500">
-                                        * El Traslado para los prismas, sera a las 10:30 AM favor de estar puntuales en el punto de encuentro!
-                                    </p>                         
-                                    <div class="pt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
-                                        <div class="relative rounded-xl h-40 w-full overflow-hidden shadow-inner bg-slate-900">
-                                            <img src="../Images/MineralDetalle01.jpg" class="w-full h-full object-cover opacity-90 hover:scale-105 transition-transform duration-500" alt="Punto de encuentro Parque Rojo">
-                                            <span class="absolute bottom-2 left-2 bg-slate-900/80 text-white text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-md backdrop-blur-sm">
-                                                Huasca de Ocampo
-                                            </span>
-                                        </div>
+                                <div class="text-slate-600 text-sm leading-relaxed">
+                                    <strong class="text-slate-900 block mb-1">
+                                        4:00 PM | Salida para Vía Ferrata Nocturna
+                                        <a href="https://maps.app.goo.gl/NhgUw8SapcVPY2uNA" target="_blank" class="text-emerald-600 hover:text-emerald-700 underline inline-flex items-center gap-1 font-bold group">
+                                            HGO-Adventures
+                                            <i class="ph ph-map-pin text-base group-hover:scale-110 transition-transform"></i>
+                                        </a>
+                                    </strong>
+                                    ¡Lleva tu adrenalina al siguiente nivel! ✨ Atrévete a vivir la Vía Ferrata Nocturna, un recorrido por las imponentes paredes de roca de la Sierra, pero bajo el manto de las estrellas. Además, cruzarás puentes iluminados, una experiencia mágica donde las luces guían tu camino sobre el abismo. ¡Una aventura inolvidable que solo se vive de noche!
+                                </div>
+                                <p class="text-slate-500 text-xs italic bg-slate-50 p-2.5 rounded-lg border-l-4 border-emerald-500">
+                                    * El traslado para los prismas será a las 10:30 AM. ¡Favor de estar puntuales en el punto de encuentro!
+                                </p>         
+                                <div class="pt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+                                    <div class="relative rounded-xl h-40 w-full overflow-hidden shadow-inner bg-slate-900">
+                                        <img src="../Images/MineralDetalle01.jpg" class="w-full h-full object-cover opacity-90 hover:scale-105 transition-transform duration-500" alt="Huasca de Ocampo">
+                                        <span class="absolute bottom-2 left-2 bg-slate-900/80 text-white text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-md backdrop-blur-sm">
+                                            Huasca de Ocampo
+                                        </span>
+                                    </div>
 
-                                        <div class="relative rounded-xl h-40 w-full overflow-hidden shadow-inner bg-slate-900">
-                                            <img src="../Images/MineralDetalle02.jpg" class="w-full h-full object-cover opacity-90 hover:scale-105 transition-transform duration-500" alt="Reglamento para pasajeros">
-                                            <span class="absolute bottom-2 left-2 bg-slate-900/80 text-white text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-md backdrop-blur-sm">
-                                                Huasca de Ocampo
-                                            </span>
-                                        </div>
+                                    <div class="relative rounded-xl h-40 w-full overflow-hidden shadow-inner bg-slate-900">
+                                        <img src="../Images/MineralDetalle02.jpg" class="w-full h-full object-cover opacity-90 hover:scale-105 transition-transform duration-500" alt="Prismas Basálticos">
+                                        <span class="absolute bottom-2 left-2 bg-slate-900/80 text-white text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-md backdrop-blur-sm">
+                                            Huasca de Ocampo
+                                        </span>
                                     </div>
                                 </div>
+
                             </div>
                         </div>
+                    </div>
 
                         <div class="relative group">
                             <div class="absolute -left-[33px] top-1.5 bg-white border-2 border-emerald-500 w-4 h-4 rounded-full group-hover:bg-emerald-500 transition-colors"></div>
